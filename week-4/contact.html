@@ -1,3 +1,112 @@
-<nav>
-<a href="index.html">Go Back</a>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reggie&apos;s Coffee Shop - Contact us</title>
+</head>
+
+<body>
+    <!--tag name + tab to auto open and close-->
+    <!-- ctrl and / to add comment -->
+    <!--ctrl + arrows keys to jump to end or begining of line-->
+    <!--alt + arrow keys to move code up and down-->
+    <!--alt + z to wrap text to next line-->
+    <!-- alt + ctrl + arrow key, for multiple edit points. esc to get ride of them.-->
+    <!--tagname*number to get multiple tags. eg: li*5 for 5 list items-->
+    <!-- ctrl + A = select everything -->
+    <!-- ctrl + C = copy -->
+    <!-- ctrl + V = paste -->
+    <header>
+        <h1>Reggie&apos;s Coffee Shop</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--*****main content of the page*****-->
+    <main>
+        <h2>Contact us</h2>
+        <table>
+            <caption>Hours of Operation</caption>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mon - Fri</td>
+                    <td>6 AM - 9 PM</td>
+                </tr>
+                <tr>
+                    <td>Sat</td>
+                    <td>8 AM - 11 PM</td>
+                </tr>
+                <tr>
+                    <td>Sun</td>
+                    <td>CLOSED</td>
+                </tr>
+            </tbody>
+        </table>
+        <section>
+            <h3>We love to hear from you!</h3>
+            <form action="thanks.html" method="get">
+                <div>
+
+                    <label for="fullname">Your Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" value="Mr.">
+                </div>
+                <div>
+
+                    <label for="youremail">Email</label>
+                    <!-- requird is a boolean attribute, it only needs to be set by its name -->
+                    <input type="email" id="youremail" name="youremail" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div>
+                    <label for="tickets">How many tickets? (sold in pairs)</label>
+                    <input type="number" name="tickets" id="tickets" min="2" max="10" step="2">
+                </div>
+                <div>
+                    <label for="row">Select Row</label>
+                    <select name="row" id="row">
+                        <option value="front">Front Row</option>
+                        <option value="center" selected>Center Row</option>
+                        <option value="back">Back Row</option>
+                    </select>
+                </div>
+                <div>
+                    <!-- radio buttons should share a "name" if being paired -->
+                    <h3>have you been here before?</h3>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="past" id="yes" checked>
+                    <label for="no">No</label>
+                    <input type="radio" name="past" id="no">
+                </div>
+                <div>
+                    <h3>Policies</h3>
+                    <input type="checkbox" name="policies" id="policies">
+                    <label for="policies">I agree with the Term and Policies</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <!--*****footer of the page***** -->
+    <footer>
+        <p>Copyright &copy; Reggie&apos;s Coffee Shop, 2021</p>
+    </footer>
+</body>
+
+</html>
