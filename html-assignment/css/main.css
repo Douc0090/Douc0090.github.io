@@ -1,0 +1,38 @@
+body{
+font-size: 18px;
+}
+
+header,footer{
+    background-color: darkolivegreen;
+}
+
+.site-title{
+    color: #F18F01;
+}
+
+#my-image{
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+#hobbies ul{
+    list-style: square
+}
+
+#hobbies ul li:nth-child(odd) {
+    background-color: #006E90;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul a{
+    text-decoration: none;
+
+    background-color: #ADCAD6;
+    border: 2px solid black
+}
+
+nav ul a:hover{
+    background-color: #41BBD9
+}
