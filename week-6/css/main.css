@@ -52,7 +52,14 @@ nav ul a{
 
 /* child selector or direct child selector */
 article > p{
+    /* typography properties */
     font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-style: italic;
 }
 
 /* adjacent silbing selector */
@@ -130,3 +137,4 @@ body footer {
 footer.site-footer{
     background-color: rgba(0, 0, 0, 0.2);
 }
+
