@@ -30,3 +30,15 @@ nav ul a:hover,
 nav ul a:focus{
     text-decoration: underline;
 }
+
+
+footer{
+    text-align: right;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+
+#facts{
+    text-align: left;
+}
