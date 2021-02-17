@@ -1,0 +1,32 @@
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: #aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header h1{
+    color: whitesmoke;
+}
+
+#contact{
+    border: 1px solid black;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul a{
+    text-decoration: none; 
+    text-transform: uppercase;
+}
+
+nav ul a:hover,
+nav ul a:focus{
+    text-decoration: underline;
+}
