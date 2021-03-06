@@ -1,44 +1,132 @@
 
-html{
+html {
+    /* setting the default font size and the margin of the website */
     font-size: 16px;
+    margin: 10em
 }
 
-body{
-    background-color: #aad4cf;
+body {
+    /* setting up the font for the article and the background colour */
     font-family: Arial, Helvetica, sans-serif;
-    
+    background-color: #aad4cf;
 }
 
-header h1{
+main,
+footer,
+nav {
+    /* using rgba to make a transparant white colour */
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
+h1 {
+    font-size: 3em;
+}
+
+
+header h1 {
+    /* putting the h1 text ontop of a image */
     color: whitesmoke;
+    background: url("../images/lone-starfish-wide.jpg") no-repeat center center;
+    background-size: 25em;
+    padding: 4em 2em 2em 2em;
+    text-align: center;
+    margin-bottom: -0.3em;
 }
 
-#contact{
+#contact {
+    /* adding a border around the contact section */
     border: 1px solid black;
 }
 
-nav ul{
+nav ul {
     list-style: none;
 }
 
-nav ul a{
-    text-decoration: none; 
+nav ul a {
+    /* making nav all capital and spaced out */
+    color: black;
+    font-size: 25px;
+    list-style: none;
+    text-decoration: none;
     text-transform: uppercase;
+    float: left;
+    padding: 1em 5em 1em 5.9em;
+
+}
+
+a[href="#story"] {
+    /* /* adding those lines beside the word contact */
+    box-shadow: 0.1em 0em 0em 0em black;
+}
+
+a[href="#home"] {
+    /* /* adding those lines beside the word contact */
+    box-shadow: 0.1em 0em 0em 0em black;
 }
 
 nav ul a:hover,
-nav ul a:focus{
+nav ul a:focus {
+    /* making nav get underlined only when hovered over */
     text-decoration: underline;
 }
 
+h2 {
+    font-size: 30px;
+    padding-right: 20em;
+}
 
-footer{
+main p img {
+    /* making the starfish image in the paragraph smaller so text can wrap around it */
+    width: 10em;
+    height: 10em;
+    padding-right: 1em;
+    float: left;
+}
+
+main p {
+    text-align: left;
+    line-height: 1.3em;
+    padding-left: 1em;
+
+}
+
+footer {
+    /* making the footer in the bottom right */
     text-align: right;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-right: 1em;
 }
 
-#facts{
-    text-align: left;
+article {
+    padding: 20px;
+}
+
+#contact {
+    padding: 1em 1em 1em 1em;
+}
+
+button {
+    /* making the submit button have the same look as the article */
+    padding: 1em;
+    margin: 1em 1em 1em 0em;
+    width: 100px;
+    background-color: inherit;
+}
+
+
+div input,
+textarea {
+    /* making the text area and input areas span across the screen */
+    width: 100%;
+    margin: 0.5em 0em 0.5em 0em;
+}
+
+textarea {
+    height: 5em;
+    resize: none;
+}
+
+#radio input {
+    width: 1%;
 }

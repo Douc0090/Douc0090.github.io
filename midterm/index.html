@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- adding a title to the tab and linking CSS -->
 
 <head>
     <meta charset="UTF-8">
@@ -8,12 +9,12 @@
 </head>
 
 <body>
-
+    <!-- a section ID for navigation to jump to -->
     <section id="Home">
 
         <header>
             <h1>Lone Starfish</h1>
-            <img src="images/lone-starfish-wide.jpg" alt="A wide picture of a lone starfish">
+            <!-- the three navigation options -->
             <nav>
                 <ul>
                     <li>
@@ -32,14 +33,14 @@
 
     <main>
 
-        <article>
-
+        
+            <!-- a section ID for navigation to jump to -->
             <section id="story">
-
+                <article>
                 <h2>
                     Life of a Starfish
                 </h2>
-
+                <!-- a paragraph tag with an image in the parapgraph -->
                 <p> <img src="images/lone-starfish.jpg" alt="a lone picture of a starfish">
                     Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
                     catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak
@@ -66,14 +67,15 @@
                     searobin
                     false trevally, dottyback.
                 </p>
+                </article>
             </section>
             <hr>
+            <section>
             <h2>
                 Facts about starfish
             </h2>
-
+            <!-- unordered list item for when order isn't important -->
             <ul>
-                <section id="facts">
                     <li>
                         Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.
                     </li>
@@ -86,46 +88,54 @@
                     <li>
                         Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.
                     </li>
+                </ul>
                 </section>
-            </ul>
-        </article>
-            <hr>
+        <hr>
 
 
 
-            <h2>Contact to learn more</h2>
+        <h2>Contact to learn more</h2>
 
-            <section>
+            <!-- a section ID for navigation to jump to -->
+            <section id="contact">
 
-                <section id="contact">
 
-                    <form action="thanks" method="get"></form>
+                <form action="thanks" method="get"></form>
+                <!-- table elements are used for the input field for users to enter -->
+                <div>
+                            <label for="fullname">Your Name</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+                </div>
 
-                    <div>
-                        <tr>
-                            <th>
-                                <label for="fullname">Your Name</label>
-                                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
-                            </th>
-                        </tr>
-                    </div>
+                <div>
+                    
+                            <label for="email">Your Email</label>
+                            <input type="text" id="email" name="email" placeholder="example@example.com" required>
+                 
+                </div>
 
-                    <div>
-                        <label for="email">Your Email</label>
-                        <input type="text" id="email" name="email" placeholder="example@example.com" required>
-                    </div>
+                <div>
+                   
+                            <label for="message">Your Message</label>
+                            <textarea name="message" id="message"></textarea>
+                        
+                </div>
+            </section>
+                <div>
+                    <h3>
+                        Would you like to visit the starfish?
+                    </h3>
 
-                    <div>
-                        <label for="message">Your Message</label>
-                        <textarea name="message" id="message"></textarea>
-                    </div>
+                    <!--a section ID for CSS -->
 
-                    <div>
-                        <h3>
-                            Would you like to visit the starfish?
-                        </h3>
+                    <section id="radio">
+
+                        <!-- radio buttons being used so only one option can be selected -->
 
                         <label for="yes">Yes</label>
+
+                        <!-- Checked is being used so that "yes" is selected by default -->
+
                         <input type="radio" name="visit" id="yes" checked>
 
                         <label for="no">No</label>
@@ -134,15 +144,15 @@
                         <label for="maybe">Maybe</label>
                         <input type="radio" name="visit" id="maybe">
 
-                    </div>
+                    </section>
 
-                    <button type="submit">Submit</button>
+                </div>
 
-                    </form>
-                </section>
-   
+                <button type="submit">Submit</button>
+
+
     </main>
-
+    <!-- footer for copy right info -->
     <footer> &copy; Lone Starfish</footer>
 </body>
 
