@@ -1,0 +1,100 @@
+/*********************
+	Defaults
+**********************/
+body{
+    font-family: 'Roboto', sans-serif;
+  }
+  h2{
+    text-align:center;
+  }
+  section{
+      max-width: 800px;
+    height: 400px;
+      margin: 0 auto 20px;
+      background-color: #CC9900;
+      border: 1px solid #666;
+  }
+  .box{
+      box-sizing: border-box;
+      padding: 20px;
+      text-transform: uppercase;
+      border: 1px solid #999;
+      border-radius: .5em;
+      background-color: #FFCC66;
+  }
+  /***************** 
+    Flexbox Styles 
+  ******************/
+  
+  .container{
+    display: flex;
+   
+    /* flex direction: row. flex wrap */
+    flex-flow: row wrap;
+
+    /* aligning items evenly on the main axis */
+    justify-content: space-evenly;
+
+    /* align the items in the centre of the cross axis */
+    align-items: center;
+  }
+
+  .two{
+      /* align single element at the bottom of the cross axis */
+      align-self: flex-end;
+  }
+
+  .box{
+      /* grow elements by 1 */
+      flex: 1
+  }
+  
+  .three{
+      flex-grow: 2;
+  }
+
+  .four{
+      order: -3;
+  }
+
+
+.three{
+    order: -2;
+}
+
+.one{
+    order: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
