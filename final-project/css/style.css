@@ -290,33 +290,20 @@ font-size: 1.2rem;
 .john{
     background-color: #ffe6ac;
     margin: 1em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: 
-    "header header1 header1"
-    "header header1 header1"
-    "left center1 center1"
-    "left center1 center1"
-    "footer footer1 footer1"
-    ;
-    gap: 1em;
+
 }
 
 .john img{
-    grid-area: header;
     width: 100%;
 }
 
 .john h3{
-    grid-area: left;
     padding: 0rem 0rem 0rem 1rem;
 }
 .john h4{
-    grid-area: left;
-    margin: 3rem 0rem 0rem 1rem;
+    margin: -0.5rem 0rem 0rem 1rem;
     box-shadow: 0em 0.1em 0em 0em #c68d00;
-    width: 50rem;
+    width: 95%;
     
 }
 
