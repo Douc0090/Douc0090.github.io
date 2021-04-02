@@ -125,6 +125,7 @@ textarea {
     padding: 1rem;
     margin: -0.5rem 0rem 0rem 0rem;
     border: 2px solid #c68d00;
+    width: 3.3%;
 }
 
 .main-nav i:hover{
@@ -213,7 +214,7 @@ font-size: 1.2rem;
 }
 
 .services img{
-    width: 50rem;
+    width: 100%;
 }
 
 .digital, .marketing, .production, .webdev, .print{
@@ -293,18 +294,18 @@ font-size: 1.2rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
-    "header header header"
-    "header header header"
-    "left center center"
-    "left center center"
-    "footer footer footer"
+    "header header1 header1"
+    "header header1 header1"
+    "left center1 center1"
+    "left center1 center1"
+    "footer footer1 footer1"
     ;
     gap: 1em;
 }
 
 .john img{
     grid-area: header;
-    width: 52.2rem;
+    width: 100%;
 }
 
 .john h3{
