@@ -114,7 +114,7 @@ nav li a:focus{
 
 textarea {
     resize: none;
-    width: 80%;
+    width: 79%;
     margin: 0em 0em 1em 1em;
     padding: 0rem 1rem;
 }
@@ -259,6 +259,7 @@ font-size: 1.2rem;
 
 .vision p{
     color: white;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .vision .btn{
@@ -402,6 +403,7 @@ font-size: 1.2rem;
 footer{
     color: #c78c06;
     background-color: #222222;
+    padding: 1rem;
 }
 
 
