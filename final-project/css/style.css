@@ -114,18 +114,17 @@ nav li a:focus{
 
 textarea {
     resize: none;
-    float: left;
     width: 85%;
     margin: 0em 0em 1em 1em;
 }
 
 .main-nav i{
     color: #c68d00;
+    float: right;
     font-size: 1.5rem;
     padding: 1rem;
-    margin: -0.5rem 0rem 0rem 0rem;
+    margin: -0.5rem 2rem 0rem 0rem;
     border: 2px solid #c68d00;
-    width: 3.3%;
 }
 
 .main-nav i:hover{
