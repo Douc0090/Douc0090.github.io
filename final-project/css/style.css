@@ -126,7 +126,7 @@ textarea {
     padding: 1rem;
     margin: -0.5rem 2rem 0rem 0rem;
     border: 2px solid #c78c06;
-    position: absolute;
+    position: fixed;
     width: 3.3%;
 }
 
@@ -404,6 +404,10 @@ footer{
     color: #c78c06;
     background-color: #222222;
     padding: 1rem;
+}
+
+footer a{
+    color: #c78c06;
 }
 
 
