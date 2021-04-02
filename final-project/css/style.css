@@ -115,15 +115,22 @@ nav li a:focus{
 textarea {
     resize: none;
     float: left;
-    width: 90%;
+    width: 85%;
     margin: 0em 0em 1em 1em;
 }
 
 .main-nav i{
+    color: #c68d00;
     font-size: 1.5rem;
     padding: 1rem;
     margin: -0.5rem 0rem 0rem 0rem;
     border: 2px solid #c68d00;
+}
+
+.main-nav i:hover{
+    color: #222222;
+    background-color: #c68d00;
+    border: 2px solid white;
 }
 
 /* Home page */
@@ -178,7 +185,7 @@ font-size: 1.2rem;
 }
 
 .about img{
-    width: 50rem;
+    width:100%;
 }
 
 
