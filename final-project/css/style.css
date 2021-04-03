@@ -49,11 +49,20 @@ table {
 
 /******* CSS RESET ********/
 /**************************/
+
+
+
 /**************************/
+
+
+
 /**************************/
 /****** CUSTOM CSS *******/
 
-@media screen and (max-width:800px){
+
+
+
+ /* setting defaults of the website including the custom font from google */
 
 html{
     font-family: 'open sans', sans-serif;
@@ -106,6 +115,8 @@ nav li a{
     display: block;
 }
 
+/* nav will change colour to the oposite when hovered */
+
 nav li a:hover,
 nav li a:focus{
     color:black;
@@ -117,7 +128,10 @@ textarea {
     width: 79%;
     margin: 0em 0em 1em 1em;
     padding: 0rem 1rem;
+
 }
+
+/* giving search button colour and a box */
 
 .main-nav i{
     color: #c78c06;
@@ -126,8 +140,8 @@ textarea {
     padding: 1rem;
     margin: -0.5rem 2rem 0rem 0rem;
     border: 2px solid #c78c06;
-    position: fixed;
     width: 3.3%;
+    position: static;
 }
 
 .main-nav i:hover{
@@ -138,11 +152,15 @@ textarea {
 
 /* Home page */
 
+/* background image for text to be over */
+
 .home{
     background: url("../img/main-banner.jpg") no-repeat center center;
     background-size: 100em;
     padding: 7em 0em;
 }
+
+/* changeing colour of home text and giving a black tansparant background to the words */
 
 .hometext{
     color: white;
@@ -162,6 +180,7 @@ font-size: 1.2rem;
     float: right;
 }
 
+/* giving the connect button style and colour */
 
 .hometext .btn{
     color: #222222;
@@ -199,6 +218,8 @@ font-size: 1.2rem;
     padding: 1rem 0rem 0rem 1rem;
 }
 
+/* giving every button in the services section the same style */
+
 .services .btn{
     background-color: #222222;
     color: white;
@@ -225,25 +246,7 @@ font-size: 1.2rem;
     padding: 1rem;
 }
 
-.marketing{
-    background-color: #ffe6ac;
-    margin: 1em;
-}
 
-.production{
-    background-color: #ffe6ac;
-    margin: 1em;
-}
-
-.webdev{
-    background-color: #ffe6ac;
-    margin: 1em;
-}
-
-.print{
-    background-color: #ffe6ac;
-    margin: 1em;
-}
 
 /* vision */
 
@@ -286,116 +289,101 @@ font-size: 1.2rem;
     padding: 1rem;
 }
 
-
-.john{
+.john, .bob{
     background-color: #ffe6ac;
     margin: 1em;
 
 }
 
-.john img{
+.john img ,.bob img{
     width: 100%;
 }
 
-.john h3{
+.john h3, .bob h3{
     padding: 0rem 0rem 0rem 1rem;
 }
-.john h4{
+
+.john h4, .bob h4{
     margin: -0.5rem 0rem 0rem 1rem;
     box-shadow: 0em 0.1em 0em 0em #c78c06;
     width: 95%;
     
 }
 
-.john p{
+.john p, .bob p{
     grid-area: footer;
     padding: 0rem 0rem 1rem 1rem;
 }
 
-.bob{
-    background-color: #ffe6ac;
-    margin: 1em;
-
-}
-
-.bob img{
-    width: 100%;
-}
-
-.bob h3{
-    padding: 0rem 0rem 0rem 1rem;
-}
-.bob h4{
-    margin: -0.5rem 0rem 0rem 1rem;
-    box-shadow: 0em 0.1em 0em 0em #c78c06;
-    width: 95%;
-    
-}
-
-.bob p{
-    grid-area: footer;
-    padding: 0rem 0rem 1rem 1rem;
-}
-
-
-/* .bob{
-    background-color: #ffe6ac;
-    margin: 1em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: 
-    "header header header"
-    "header header header"
-    "left center center"
-    "left center center"
-    "footer footer footer"
-    ;
-    gap: 1em;
-}
-
-.bob img{
-    grid-area: header;
-    width: 52.2rem;
-}
-
-.bob h3{
-    grid-area: left;
-    padding: 0rem 0rem 0rem 1rem;
-}
-.bob h4{
-    grid-area: left;
-    margin: 3rem 0rem 0rem 1rem;
-    box-shadow: 0em 0.1em 0em 0em #c68d00;
-    width: 50rem;
-    
-}
-
-.bob p{
-    grid-area: footer;
-    padding: 0rem 0rem 1rem 1rem;
-} */
 
 /* contact us */
 
 
 
+.contact{
+padding-left: 1rem;
+}
+
+.contact input{
+    width: 95%;
+    margin: 0.5em 0em 0.5em 0em;
+}
+
+.contact textarea{
+    width: 92%;
+    height: 10rem;
+    margin: 0.5em 0em 0.5em 0em;
+}
+
+.contact button{
+    color: #c78c06;
+    background-color: #222222;
+    padding: 0.5rem;
+    border: none;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
 
 
 
 /* hours */
 
+.hours h3{
+    padding: 1rem;
+}
+
+/* giving the table its outline */
+
+table, th, td {
+    border: 2px solid black;
+    width: 50%;
+    padding: 1rem 0rem;
+    margin: 1rem;
+  }
+
+  .hours td{
+    padding: 1rem;
+  }
+
+ .day, .hour{
+      background-color: #ffe6ac;
+
+      padding: 1rem 0rem;
+  }
 
 
 /* location */
 
-.location iframe{
-    width: 100%;
+.location h3{
+    padding: 1rem 0rem 0rem 1rem;
 }
 
-
-
-
+.location iframe{
+    width: 96%;
+    padding: 1rem;
+}
 
 /* the footer */
 
@@ -411,4 +399,3 @@ footer a{
 }
 
 
-}

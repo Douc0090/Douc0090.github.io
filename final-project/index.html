@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final</title>
+    <!-- linking css -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- linking fontawesome for icons -->
     <script src="https://kit.fontawesome.com/f3e8969dfe.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- adding custom open sans font from googlefonts -->
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -19,6 +22,7 @@
 
         <nav class="main-nav">
             <ul class="nav-list">
+
                <li><a href="#home">Home</a></li>
                <li><a href="#about">About us</a></li>
                <li><a href="#services">Services</a></li>
@@ -27,7 +31,8 @@
             </ul>
 
             <textarea name="search" id="" cols="90" rows="2"></textarea>
-            
+
+            <!-- adding search glass -->
             <a class="btn" href=""><i class="fas fa-search"></i>
             </a> 
         </nav>
@@ -102,6 +107,7 @@
                     Repudiandae vitae ipsa porro voluptatum impedit veniam nihil
                 </p>
 
+                <!-- adding a button with a right arrow -->
                 <a class="btn" href="">Digital Plans <i class="fas fa-caret-right"></i>
                 </a> 
                 
@@ -270,20 +276,21 @@
                 </h3>
 
                 <div>
+                    <!-- adding input fields with place holder text -->
                     <label for="fullname">Full Name</label>
                     <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
         </div>
 
         <div>
             
-                    <label for="email">Email</label>
+                    <label for="email">Email Address</label>
                     <input type="text" id="email" name="email" placeholder="example@example.com" required>
          
         </div>
 
         <div>
-           
-                    <label for="message">Message</label>
+                    <!-- adding text area with no place holder -->
+                    <label for="message">Your Message</label>
                     <textarea name="message" id="message"></textarea>
                 
         </div>
@@ -300,15 +307,32 @@
                     Hours of operation
                 </h3>
 
-                    add table here
+                <!-- adding the hours table -->
+
+                <table style="width:95%">
+                    <tr>
+                      <th class="day">Days</th>
+                      <th class="hour">Hours</th>
+                    </tr>
+                    <tr>
+                      <td>Monday - Friday</td>
+                      <td>9 AM - 6 PM</td>
+                    </tr>
+                    <tr>
+                      <td>Saturday - Sunday</td>
+                      <td>Closed</td>
+                    </tr>
+                  </table>
 
             </div>
             
             <div class="location">
 
                 <h3>
-                    location
+                    Location
                 </h3>
+
+                <!-- adding iframe for google maps showing algonquin -->
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.039149426826!2d-75.75911148457394!3d45.348021979099826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20%E2%80%93%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1617306556084!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
@@ -321,6 +345,7 @@
                     &copy;Copyright Three Star Media, 2021
                 </footer>
 
+                <!-- adding second line of footer text with a hyperlink -->
                 <footer>
                     All images are taken from <a href="https://unsplash.com/"target="_blank">Unsplash</a>
                 </footer>
