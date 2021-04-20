@@ -3,48 +3,125 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,body,div,span,applet,
+object,iframe,h1,h2,h3,h4,h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /******* CSS RESET ********/
@@ -62,41 +139,42 @@ table {
 
 
 
- /* setting defaults of the website including the custom font from google */
+/* setting defaults of the website including the custom font from google */
 
-html{
+html {
     font-family: 'open sans', sans-serif;
     font-size: 14px;
     box-sizing: border-box;
 }
-body{
+
+body {
     line-height: 1.5;
 }
 
-main{
+main {
     word-wrap: break-word;
     margin-right: auto;
-    margin-left:  auto;
+    margin-left: auto;
 }
 
 /* Mobile app section */
 
-h1{
+h1 {
     font-size: 5.063rem;
     font-weight: bold;
 }
 
-h2{
+h2 {
     font-size: 3.375rem;
     font-weight: bold;
 }
 
-h3{
+h3 {
     font-size: 2.25rem;
     font-weight: bold;
 }
 
-h4{
+h4 {
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -105,17 +183,17 @@ h4{
 
 /* nav bar */
 
-.header{
+.header {
     background-color: #c78c06;
 }
 
-.main-nav{
+.main-nav {
     color: #c78c06;
     background-color: #222222;
     padding: 0em 0em 1em 0em;
 }
 
-nav li a{
+nav li a {
     text-align: center;
     text-decoration: none;
     color: inherit;
@@ -126,12 +204,13 @@ nav li a{
 /* nav will change colour to the oposite when hovered */
 
 nav li a:hover,
-nav li a:focus{
-    color:black;
+nav li a:focus {
+    color: black;
     background-color: #c78c06;
 }
 
-input, textarea {
+input,
+textarea {
     resize: none;
     width: 80%;
     margin: 0em 0em 1em 1em;
@@ -140,7 +219,7 @@ input, textarea {
 
 /* giving search button colour and a box */
 
-.main-nav i{
+.main-nav i {
     color: #c78c06;
     float: right;
     font-size: 1.5rem;
@@ -151,7 +230,7 @@ input, textarea {
     position: static;
 }
 
-.main-nav i:hover{
+.main-nav i:hover {
     color: #222222;
     background-color: #c78c06;
     border: 2px solid white;
@@ -161,7 +240,7 @@ input, textarea {
 
 /* background image for text to be over */
 
-.home{
+.home {
     background: url("../img/main-banner.jpg") no-repeat center center;
     background-size: 100em;
     padding: 7em 0em;
@@ -169,19 +248,19 @@ input, textarea {
 
 /* changeing colour of home text and giving a black tansparant background to the words */
 
-.hometext{
+.hometext {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2em 2em;
-} 
+}
 
-.hometext .btn{
+.hometext .btn {
 
-font-size: 1.2rem;
+    font-size: 1.2rem;
 
 }
 
-.hometext i{
+.hometext i {
     font-size: 2rem;
     display: block;
     float: right;
@@ -189,7 +268,7 @@ font-size: 1.2rem;
 
 /* giving the connect button style and colour */
 
-.hometext .btn{
+.hometext .btn {
     color: #222222;
     background-color: #c78c06;
     margin: 1rem 0rem 0rem 1rem;
@@ -207,27 +286,27 @@ font-size: 1.2rem;
 /* about us */
 
 
-.about{
+.about {
     background-color: #ffe6ac;
-    display:block;
+    display: block;
     padding: 1em 2em 2em 2em;
 }
 
-.about img{
-    width:100%;
+.about img {
+    width: 100%;
 }
 
 
 
 /* our services */
 
-.services h2{
+.services h2 {
     padding: 1rem 0rem 0rem 1rem;
 }
 
 /* giving every button in the services section the same style */
 
-.services .btn{
+.services .btn {
     background-color: #222222;
     color: white;
     text-decoration: none;
@@ -238,16 +317,20 @@ font-size: 1.2rem;
     text-align: center;
 }
 
-.services .btn i{
+.services .btn i {
     font-size: 1.5rem;
     margin: 0.3rem 0.3rem;
 }
 
-.services img{
+.services img {
     width: 100%;
 }
 
-.digital, .marketing, .production, .webdev, .print{
+.digital,
+.marketing,
+.production,
+.webdev,
+.print {
     background-color: #ffe6ac;
     margin: 1rem;
     padding: 1rem;
@@ -257,22 +340,22 @@ font-size: 1.2rem;
 
 /* vision */
 
-.vision{
+.vision {
     background: url("../img/vision.jpg") no-repeat center center;
     background-size: 60em;
     padding: 2em 1em;
 }
 
-.vision h3{
+.vision h3 {
     color: white;
 }
 
-.vision p{
+.vision p {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.vision .btn{
+.vision .btn {
     background-color: #11253e;
     border: 1px solid #c78c06;
     color: white;
@@ -284,7 +367,7 @@ font-size: 1.2rem;
     text-align: center;
 }
 
-.vision .btn i{
+.vision .btn i {
     font-size: 1.5rem;
 }
 
@@ -292,32 +375,37 @@ font-size: 1.2rem;
 
 /* our team */
 
-.team h2{
+.team h2 {
     padding: 1rem;
 }
 
-.john, .bob{
+.john,
+.bob {
     background-color: #ffe6ac;
     margin: 1em;
 
 }
 
-.john img ,.bob img{
+.john img,
+.bob img {
     width: 100%;
 }
 
-.john h3, .bob h3{
+.john h3,
+.bob h3 {
     padding: 0rem 0rem 0rem 1rem;
 }
 
-.john h4, .bob h4{
+.john h4,
+.bob h4 {
     margin: -0.5rem 0rem 0rem 1rem;
     box-shadow: 0em 0.1em 0em 0em #c78c06;
     width: 95%;
-    
+
 }
 
-.john p, .bob p{
+.john p,
+.bob p {
     grid-area: footer;
     padding: 0rem 0rem 1rem 1rem;
 }
@@ -327,22 +415,22 @@ font-size: 1.2rem;
 
 
 
-.contact{
-padding-left: 1rem;
+.contact {
+    padding-left: 1rem;
 }
 
-.contact input{
+.contact input {
     width: 95%;
     margin: 0.5em 0em 0.5em 0em;
 }
 
-.contact textarea{
+.contact textarea {
     width: 92%;
     height: 10rem;
     margin: 0.5em 0em 0.5em 0em;
 }
 
-.contact button{
+.contact button {
     color: #c78c06;
     background-color: #222222;
     padding: 0.5rem;
@@ -357,37 +445,40 @@ padding-left: 1rem;
 
 /* hours */
 
-.hours h3{
+.hours h3 {
     padding: 1rem;
 }
 
 /* giving the table its outline */
 
-table, th, td {
+table,
+th,
+td {
     border: 2px solid black;
     width: 50%;
     padding: 1rem 0rem;
     margin: 1rem;
-  }
+}
 
-  .hours td{
+.hours td {
     padding: 1rem;
-  }
+}
 
- .day, .hour{
-      background-color: #ffe6ac;
+.day,
+.hour {
+    background-color: #ffe6ac;
 
-      padding: 1rem 0rem;
-  }
+    padding: 1rem 0rem;
+}
 
 
 /* location */
 
-.location h3{
+.location h3 {
     padding: 1rem 0rem 0rem 1rem;
 }
 
-.location iframe{
+.location iframe {
     width: 96%;
     padding: 1rem;
 }
@@ -395,271 +486,296 @@ table, th, td {
 /* the footer */
 
 
-footer{
+footer {
     color: #c78c06;
     background-color: #222222;
     padding: 1rem 35rem 1rem 1rem;
 
 }
 
-footer a{
+footer a {
     color: #c78c06;
 }
 
 
 /****** desktop style ******/
 
-@media screen and (min-width:1080px){
+@media screen and (min-width:1080px) {
 
-html{
+    /* setting new defaults for dekstop style */
+
+    html {
         font-size: 16px;
     }
 
-    h1{
-    font-size: 6rem;
-}
-
- h2{
-    font-size: 4.4rem;
-}
-
-h3{
-    font-size: 2.65rem;
-}
-
-h4{
-    font-size: 1.4rem;
-}
-
-
-
-
-    header img{
-        width: 50%;
-        padding: 1rem;
-        
+    h1 {
+        font-size: 6rem;
     }
 
-    .header{
+    h2 {
+        font-size: 4.4rem;
+    }
+
+    h3 {
+        font-size: 2.65rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+
+    /* making the header image smaller */
+
+    header img {
+        width: 50%;
+        padding: 1rem;
+
+    }
+
+    /* putting the nav beside each other insread of below */
+
+    .header {
         background-color: #222;
         float: left;
         height: 80px;
         padding: 1rem 1rem;
     }
 
-    
-    nav li a{
+
+    nav li a {
         background-color: #222;
         margin: 3rem 0rem 0rem 0.5rem;
         width: 13%;
         display: block;
         float: left;
     }
-    
+
+    /* making the search bar longer and beside the nav */
+
     input {
         width: 10%;
         margin: 5em 0.5em 0em 0.1em;
         padding: 0.3rem 0rem;
     }
 
-    .main-nav i{
+    .main-nav i {
         float: none;
         font-size: 1rem;
         padding: 0.5rem;
         width: 1%;
 
     }
-    
+
 
     /* home page */
 
 
-    .home{
+    /* changing size and padding of home text */
+
+    .home {
         background-size: 100%;
         padding: 5em 0em;
     }
 
 
-.hometext{
-    margin: 0rem 4rem;
-} 
-
-.hometext .btn{
-font-size: 1rem;
-padding: 2rem;
-
-}
-
-
-
-/* about us */
-
-
-.about{
-    padding: 1em 2em 2em 5em;
-    
-}
-
-.about img{
-    width:40%;
-    float: left;
-    margin-right: 1rem;
-}
-
-.about p{
-    margin: 2rem 0rem;
-    width: 100%;
-
-}
-
-
-/* serrrvices */
-
-.services h2{
-    padding: 1rem 0rem 0rem 3rem;
-}
-
-/* giving every button in the services section the same style */
-
-.services .btn{
- width: 100%;
- padding: 1rem 0rem;
-}
-
-
-.services img{
-    width: 100%;
-}
-
-.digital, .marketing{
-    margin: 1rem 3.5rem;
-    width: 40%;
-    float: left;
-}
-
-.production, .webdev, .print{
-    float: left;
-    width: 24%;
-    margin: 1rem 3.5rem;
-}
-
-
-/* vision */
-
-.vision{
-    background-size: 100%;
-    float: left;
-}
-
-.vision h3, .vision p, .vision .btn{
-    margin: 1rem 3.5rem;
-}
-
-.vision p{
-    background-color: unset;
-}
-
-.vision .btn{
-    padding: 1.5rem 2rem;
-}
-
-/* our team */
-
-.team{
-    float: left;
-    margin: 1rem 3.5rem;
-    
-}
-
-
-
-.team h2{
-
-}
-
-.john, .bob{
-padding: 0rem 0rem 22rem 0rem;
-margin: 0rem;
-}
-
-.john img ,.bob img{
-    width: 50%;
-}
-
-.john h3, .bob h3{
-    width: 100%;
-}
-
-.john h4, .bob h4{
-    width: 97%;    
-}
-
-.john p, .bob p{
-    width: 98%;
-    
-}
-
-.john img{
-    float: left; 
-    margin-right: 1rem;  
-}
-
-.bob img{
-    float: right;
-}
-
-
-
-
-.hours{
-   float: left;
-   width: 100%;
-   transform: translate(0px, 10rem);
-   margin: 0rem;
-}
-
-.contact{
-    float: left;
-    margin: 1rem 3.5rem;
-}   
-
-.contact h2{
-    padding: 3rem 0rem;
-}
-    .contact input{
-        width: 200%;   
+    .hometext {
+        margin: 0rem 4rem;
     }
-    
-    .contact .textbox{
+
+    /* connect with us button larger */
+
+    .hometext .btn {
+        font-size: 1rem;
+        padding: 2rem;
+
+    }
+
+
+
+    /* about us */
+
+
+    .about {
+        padding: 1em 2em 2em 5em;
+
+    }
+
+    /* making the image smaller and on the left on the text */
+
+    .about img {
+        width: 40%;
+        float: left;
+        margin-right: 1rem;
+    }
+
+    .about p {
+        margin: 2rem 0rem;
+        width: 100%;
+
+    }
+
+
+    /* services */
+
+    .services h2 {
+        padding: 1rem 0rem 0rem 3rem;
+    }
+
+    /* giving every button in the services section the same new style */
+
+    .services .btn {
+        width: 100%;
+        padding: 1rem 0rem;
+    }
+
+
+    .services img {
+        width: 100%;
+    }
+
+    /* making digital and marketing on thier own row */
+
+    .digital,
+    .marketing {
+        margin: 1rem 3.5rem;
+        width: 40%;
+        float: left;
+    }
+
+    /* giving the last 3 options thier own shared row */
+
+    .production,
+    .webdev,
+    .print {
+        float: left;
+        width: 24%;
+        margin: 1rem 3.5rem;
+    }
+
+
+    /* vision */
+
+    .vision {
+        background-size: 100%;
+        float: left;
+    }
+
+    .vision h3,
+    .vision p,
+    .vision .btn {
+        margin: 1rem 3.5rem;
+    }
+
+    .vision p {
+        background-color: unset;
+    }
+
+    .vision .btn {
+        padding: 1.5rem 2rem;
+    }
+
+    /* our team */
+
+    /* giving a margin to the entire team section */
+
+    .team {
+        float: left;
+        margin: 1rem 3.5rem;
+
+    }
+
+    .john,
+    .bob {
+        padding: 0rem 0rem 22rem 0rem;
+        margin: 0rem;
+    }
+
+    /* making images take up 50% so the text has room beside it */
+
+    .john img,
+    .bob img {
+        width: 50%;
+    }
+
+    .john h3,
+    .bob h3 {
+        width: 100%;
+    }
+
+    .john h4,
+    .bob h4 {
+        width: 97%;
+    }
+
+    .john p,
+    .bob p {
+        width: 98%;
+
+    }
+
+    /* johns image floats left to be on the left of the text */
+
+    .john img {
+        float: left;
+        margin-right: 1rem;
+    }
+
+    /* bobs image floats right to be on the right of the text */
+
+    .bob img {
+        float: right;
+    }
+
+
+    /* having contact fill up half the dekstop screen and to leave room for location beside it */
+
+    .contact {
+        float: left;
+        margin: 1rem 3.5rem;
+    }
+
+    .contact h2 {
+        padding: 3rem 0rem;
+    }
+
+    .contact input {
+        width: 200%;
+    }
+
+    .contact .textbox {
         width: 210%;
     }
-    
-    .contact button{
 
-    }
+    /* moving location to be beside contact and to be larger */
 
-    .location{
+    .location {
         float: left;
         transform: translate(59rem, -55rem)
-    
-    }
-    
-    .location iframe{
-        width: 200%; 
     }
 
+    .location iframe {
+        width: 200%;
+    }
+
+    /* making the hours of opetations fill the desktop view */
+
+    .hours {
+        float: left;
+        width: 100%;
+        transform: translate(0px, 10rem);
+        margin: 0rem;
+    }
+
+    .footer {
+        float: left;
+        background-color: #222;
+        width: 100%;
+        line-height: 1rem;
+        padding: 1rem 3.5rem;
 
 
-.footer{
-    float: left;
-    background-color: #222;
-    width: 100%;
-    line-height: 1rem;
-    padding: 1rem 3.5rem;
+    }
 
 
 }
-
-
-}
-
