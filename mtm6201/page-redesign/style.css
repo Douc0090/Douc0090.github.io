@@ -1,0 +1,284 @@
+
+/* @import stuff for fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@100&display=swap');
+/* end of @import */
+
+
+/* setting defaults of the website including the custom fonts from google */
+
+html {
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+}
+
+h1, h2{
+    font-family: 'Abril Fatface', cursive;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+/****** Mobile Css start ******/
+
+/*** Navigation ***/
+
+
+/* giving colour to nav and spaceing them out */
+Nav#nav{
+    background-color: #5D3A00;
+    border-color: black;
+    width: 100%;
+    margin: 0;
+    padding: 1em 0em;
+    border: none;
+}
+
+/* adding colour to the words in nav and giving them a border on the side */
+
+Nav#nav a{
+    color: #EBCFB2;
+    padding: 0.7em 1.5em;
+    border-left: 2px solid #514663;
+    border-right: 2px solid #514663;
+    font-size: 2rem;
+}
+
+/* colour will change when nav is hovered over */
+
+Nav#nav a:hover{
+    background-color: #514663;
+    color: #EBCFB2;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+}
+
+/*** Home ***/
+
+/* setting the background colour of "home" and giving a white border to give
+the sense of spacing */
+
+#home#home{
+    background-color: #EBCFB2;
+    color: #028090;
+    border-bottom: 3px solid white;
+    border-top:    6px solid white;
+}
+
+/* making the h1 font larger for mobile and giving it a transparant
+white background */
+
+#home#home h1{
+    font-size: 4rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#home#home p{
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*** About ***/
+
+/* giving "about" the same style as "home" */
+
+#about#about{
+    background-color: #EBCFB2;
+    color: #028090;
+    border-bottom: 3px solid white;
+    border-top:    3px solid white;
+}
+
+#about#about h2{
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+
+#about#about p{
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0rem 1rem;
+}
+
+/* giving the imahge a background colour to help
+it not blend into the "p" tag. Also giving it some padding
+to help it line up better with the "p" text */
+
+#about#about img{
+    background-color: #EBCFB2;
+    padding-left: 1rem;
+}
+
+/*** Contact ***/
+
+/* giving "contact the same style as the other catagories */
+
+#contact#contact{
+    background-color: #EBCFB2;
+    color: #028090;
+    border-bottom: 3px solid white;
+    border-top:    3px solid white;
+}
+
+#contact#contact h2{
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+
+#contact#contact p{
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0rem 1rem;
+}
+
+/* giving the "form" some space to breath and style to match
+the nav */
+
+#contact#contact form{
+margin-top: 1rem;
+    background-color: #5D3A00;
+    color: #EBCFB2;
+    width: 75%;
+}
+
+#contact#contact button{
+padding: 2rem 3rem;
+font-size: 1.3rem;
+background-color: #514663;
+border: 2px solid white;
+color: white;
+}
+
+#contact#contact button:hover{
+    border: 2px solid grey;
+    background-color: #433a52;
+    }
+
+/* restriciting the message textbox from being changed */
+#contact#contact textarea{
+    resize: none;
+}
+
+/*** Footer ***/
+
+footer{
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+/***** desktop CSS *****/
+
+@media screen and (min-width:1500px) {
+
+/*** Nav ***/
+
+#nav#nav{
+width: 75%;
+align-items: center;
+margin: 0rem auto;
+}
+
+#nav#nav a{
+    padding: 1rem 10rem;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+#nav#nav a:hover{
+    border-left: 3px solid #514663;
+    border-right: 3px solid #514663;
+}
+
+/*** Home ***/
+
+    #home#home{
+        background-color: #028090;
+        color: #EBCFB2;
+        border: none;
+        padding-top: 10rem;
+    }
+
+    #home#home p, #home#home h1{
+        margin: 0;
+    }
+
+    #home#home h1{
+        font-size: 3rem;
+    }
+
+    #home#home p{
+        font-size: 1.5rem;
+    }
+
+
+/*** About ***/
+
+#about#about{
+    background-color: #028090;
+    color: #EBCFB2;
+    border: none;
+    margin: 0;
+}
+
+#about#about p, #about#about h2{
+    margin: 0;
+}
+
+#about#about p{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+#about#about h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#about#about img{
+    background-color: #028090;
+    border: 5px solid grey;
+    margin: 0rem 1rem;
+    width: 15%;
+}
+
+/*** Contact ***/
+
+#contact#contact{
+    background-color: #028090;
+    color: #EBCFB2;
+    border: none;
+    margin: 0;
+}
+
+#contact#contact p, #contact#contact h1{
+    margin: 0;
+    padding: 0;
+}
+
+#contact#contact h2{
+    font-size: 3rem;
+}
+
+#contact#contact p{
+    font-size: 1.5rem;
+    margin-bottom: 10rem;
+    padding: 0rem 1rem;
+}
+
+/*** Footer ***/
+
+footer{
+    width: 75%;
+    margin-left: 15rem;
+}
+
+footer p{
+    padding-left: 1rem;
+}
+
+}
