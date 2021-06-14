@@ -53,12 +53,12 @@ table {
 html,body{
     background-color: #f7f7ff;
     font-family: 'Montserrat', sans-serif;
-    margin: 20px 50px;
+    margin: 20px 30px;
 }
 
 
 .logo{
-    width: 25%;
+    width: 40%;
 }
 
 h1,h2,h3,h4,p{
@@ -67,11 +67,11 @@ h1,h2,h3,h4,p{
 
 h1{
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
@@ -83,23 +83,95 @@ p{
     font-size: 1rem;
 }
 
-.apply{
-    background-color: white;
-    border: 1px solid black;
+.scooter{
+    padding: 1rem 0rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-input{
+.apply{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+    border-left:  2px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    text-align: center;   
+}
+
+.apply h2{
+    padding: 1rem;
+}
+
+.apply p{
+    padding-bottom: 1rem;
+}
+
+.textapplynow input, .textfooter input{
     background-color: #f7f7ff;
     border: none;
+    border-radius: 10px;
+    padding: 1rem 0.5rem;
+    padding-right: 3rem;
+    margin-bottom: 1rem;
+    height: 0.3rem;
 }
+
+.check{
+    color: #333131;
+    margin: 0.5rem 1rem;
+}
+
+.check input{
+    width: 25px;
+    height: 15px;
+}
+
+
+.apply button{
+    background-color: #57eeab;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    color: #333131;
+}
+
+.alreadyapplied{
+    margin: 0rem 1rem;
+    text-align: center;
+}
+
+p a{
+    color: #ff8480;
+    text-decoration: none;
+}
+
 
 
 footer{
     background-color: #fffd8c;
+    margin: 0rem -3rem;
+    padding: 0rem 3rem;
+    padding-bottom: 1rem;
+}
+
+footer button{
+    color: white;
+    background-color: #ff8480;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    
 }
 
 footer{
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-template-areas: 
     "head head head head"
     "para para para para"
@@ -107,30 +179,185 @@ footer{
     "btn btn btn btn"
     "social social social social"
     ;
+    display: grid;
 }
 
 
+footer h4{
+    grid-area: head;
+    margin-right: 5rem;
+    font-weight: bold;
+    padding: 1rem 0rem;
+}
 
-.city{
-    grid-area: city;
+footer p{
+    grid-area: para;
+}
+
+.textfooter{
+    padding-top: 1rem;
 }
 
 .hour{
     grid-area: hour;
+    width: 12%;
+    height: 0.3rem;
+}
+
+.city{
+    grid-area: city;
+    width: 40%;
+    height: 0.3rem;
 }
 
 .calculate{
-    width: 90%;
+    width: 100%;
     grid-area: btn;
 
 }
 
-.socialmedia{
-    width: 25%;
+
+footer i{
     grid-area: social;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    color: #333131;
+    
 }
 
-i{
-    width: 25%;
+footer .socialmedia{
+    text-align: center;
+}
+
+@media  (min-width: 600px) {
+
+.logo{
+    width: 15%;
+}
+
+html{
+    margin: 20px 50px;
+}
+
+h1{
+    padding: 1rem 0rem;
+}
+
+.scooter{
+    width: 50%;
+}
+
+.apply{
+    text-align: left;
+}
+
+.apply h2{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.apply p{
+    padding-left: 2rem;
+}
+
+.apply button{
+    margin-left: 5%;
+}
+
+.apply .check{
+    margin-left: 5%;
+}
+
+
+.textapplynow input{
+    margin-left: 2rem;
+    width: 80%;
+    margin-right: 1rem;
+    align-content: center;
+    background-color: white;
+}
+
+.apply button{
+    width: 90%;
+    align-content: center;
+}
+
+footer{
+    margin: 0rem -5rem;
+    padding-left: 5rem;
+}
+
+footer .city{
+    width: 20%;
+}
+
+footer .calculate{
+    width: 45%;
+}
+
+footer .socialmedia{
+    width: 100%;
+}
+
+}
+
+@media  (min-width: 1080px) {
+
+html{
+    background-color: red;
+    width: 1080px;
+    margin: auto;;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: (1, 1fr);
+    grid-template-areas: 
+    "logo logo logo"
+    "boss scoorer apply"
+    "boss scooter apply"
+    "start scooter apply"
+    "footer footer footer"
+    ;
+}
+
+.logo{
+    width: 10%;
+    grid-area: logo;
+}
+
+h1{
+    margin-right: 60%;
+    grid-area: boss;
+}
+
+h3{
+    margin-right: 55%;
+    grid-area: start;
+}
+
+.scooter{
+    grid-area: scooter;
+    width: 30%;
+    
+}
+
+.apply{
+    grid-area: apply;
+}
+
+footer{
+    grid-area: footer;
+    margin: 0rem -15%;
+    padding-left: 15%;
+}
+
+footer .calculate{
+    width: 20%;
+}
+
+footer .socialmedia{
+    float: right;
+    margin-left: 5%;
+    width: 30%;
+}
 
 }
