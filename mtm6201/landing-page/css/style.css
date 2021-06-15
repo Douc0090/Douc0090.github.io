@@ -50,6 +50,8 @@ table {
 
 /***** End of CSS Reset *****/
 
+/* setting html defaults like text and margin */
+
 html,body{
     background-color: #f7f7ff;
     font-family: 'Montserrat', sans-serif;
@@ -83,6 +85,7 @@ p{
     font-size: 1rem;
 }
 
+/* chaning the size of the scooter image and centering it */
 .scooter{
     padding: 1rem 0rem;
     display: block;
@@ -90,6 +93,7 @@ p{
     margin-right: auto;
 }
 
+/* giving the apply now box a drop shadow and white background */
 .apply{
     background-color: white;
     border-radius: 20px;
@@ -105,7 +109,15 @@ p{
 
 .apply p{
     padding-bottom: 1rem;
+    
 }
+
+/* setting font size of the extra text in "enter your info below" to 0 to hide it */
+.infobelow{
+    font-size: 0rem;
+}
+
+/* giving the input fields rounded edges  */
 
 .textapplynow input, .textfooter input{
     background-color: #f7f7ff;
@@ -127,6 +139,7 @@ p{
     height: 15px;
 }
 
+/* giving the button its colour, sizing, and rounded edges */
 
 .apply button{
     background-color: #57eeab;
@@ -151,6 +164,7 @@ p a{
 }
 
 
+/* giving the footer proper colour and making it wrap to the edges */
 
 footer{
     background-color: #fffd8c;
@@ -158,6 +172,8 @@ footer{
     padding: 0rem 3rem;
     padding-bottom: 1rem;
 }
+
+/* giving calculate button rounded edges and colour */
 
 footer button{
     color: white;
@@ -170,8 +186,11 @@ footer button{
     
 }
 
+/* using grid to organize the footer */
+
 footer{
     grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-areas: 
     "head head head head"
     "para para para para"
@@ -216,6 +235,7 @@ footer p{
 
 }
 
+/* giving the social media icons thier colour and sizing */
 
 footer i{
     grid-area: social;
@@ -268,6 +288,7 @@ h1{
     margin-left: 5%;
 }
 
+/* changing the size of the apply now field to be larger */
 
 .textapplynow input{
     margin-left: 2rem;
@@ -303,61 +324,99 @@ footer .socialmedia{
 
 @media  (min-width: 1080px) {
 
-html{
-    background-color: red;
-    width: 1080px;
-    margin: auto;;
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: (1, 1fr);
-    grid-template-areas: 
-    "logo logo logo"
-    "boss scoorer apply"
-    "boss scooter apply"
-    "start scooter apply"
-    "footer footer footer"
-    ;
+
+    /* making the scooter image a background image and centering it */
+
+body{
+    background-image: url(../images/bg-image/scooter.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    padding-top: 5rem;
 }
 
 .logo{
     width: 10%;
-    grid-area: logo;
 }
 
 h1{
-    margin-right: 60%;
-    grid-area: boss;
+    font-size: 3rem;
+    margin-right: 70%;
+
 }
 
 h3{
-    margin-right: 55%;
-    grid-area: start;
+    font-size: 1rem;
+    margin-right: 70%;
+ 
 }
+
+/* hiding the scooter image */
 
 .scooter{
-    grid-area: scooter;
-    width: 30%;
-    
+   display: none;  
 }
 
+/* using flex wrap to put the apply now section on the right */
 .apply{
-    grid-area: apply;
+    padding-right: 5rem;
+    margin-top: -20rem;
+    margin-left: 50rem;
+    width: 27%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* bringing back "to get started" by increasing the font size from 0 to 1rem */
+
+.infobelow{
+    color: #333131;
+    font-size: 1rem;
+}
+
+.apply h2, .apply p{
+    margin-left: 2rem;
+    padding-left: 1rem;
+}
+
+.alreadyapplied{
+    margin: auto;
+}
+
+
+.apply input{
+    padding-right: 1rem;
+    margin-left: 3rem;
+    background-color: #f7f7ff;
+}
+
+.apply button{
+    margin-left: 3rem;
+    padding-right: 2rem;
+}
+
+.apply p{
+    margin-left: 5rem;
 }
 
 footer{
     grid-area: footer;
-    margin: 0rem -15%;
-    padding-left: 15%;
+    float: inline-end;
 }
 
 footer .calculate{
     width: 20%;
 }
 
+/* moving the social media icons to the right */
+
 footer .socialmedia{
     float: right;
     margin-left: 5%;
     width: 30%;
+    margin: auto;
+    padding-left: 2.5rem;
 }
 
 }
