@@ -402,6 +402,7 @@ h3{
 footer{
     grid-area: footer;
     float: inline-end;
+    width: 100%;
 }
 
 footer .calculate{
