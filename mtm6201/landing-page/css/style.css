@@ -323,7 +323,9 @@ footer .socialmedia{
 
 @media  (min-width: 1080px) {
 
-
+html{
+    height: 100%;
+}
     /* making the scooter image a background image and centering it */
 
 body{
