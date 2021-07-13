@@ -1,0 +1,3 @@
+move everything to the root of douc0090.github.io
+
+so when you go to douc0090.github.io you go straight to the final
